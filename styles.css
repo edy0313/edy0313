@@ -299,9 +299,6 @@ section {
   display: flex;
   justify-content: center;
   flex-flow: row wrap;
-
-  /* width: %; */
-
 }
 
 .works-content {
@@ -444,7 +441,13 @@ footer {
 /* 760pxを下回ると発動 */
 @media screen and (max-width: 760px) {
 
-
+  body {
+    color: #fff;
+    background: rgb(19, 18, 18);
+    font-family: fantasy;
+    color: #BCBCBC;
+    width: 100%;
+  }
   /* ロゴ */
   .f-logo {
     display: none;
