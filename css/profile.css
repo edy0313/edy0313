@@ -1,0 +1,510 @@
+/*
+html5doctor.com Reset Stylesheet
+v1.6.1
+Last Updated: 2010-09-17
+Author: Richard Clark - http://richclarkdesign.com
+Twitter: @rich_clark
+*/
+
+html,
+body,
+div,
+span,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+abbr,
+address,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+samp,
+small,
+strong,
+sub,
+sup,
+var,
+b,
+i,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section,
+summary,
+time,
+mark,
+audio,
+video {
+  /* margin:0; */
+  padding: 0;
+  border: 0;
+  outline: 0;
+  font-size: 100%;
+  vertical-align: baseline;
+  background: transparent;
+}
+
+body {
+  line-height: 1;
+}
+
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
+  display: block;
+}
+
+nav ul {
+  list-style: none;
+}
+
+blockquote,
+q {
+  quotes: none;
+}
+
+blockquote:before,
+blockquote:after,
+q:before,
+q:after {
+  content: '';
+  content: none;
+}
+
+a {
+  margin: 0;
+  padding: 0;
+  font-size: 100%;
+  vertical-align: baseline;
+  background: transparent;
+}
+
+/* change colours to suit your needs */
+ins {
+  background-color: #ff9;
+  color: #000;
+  text-decoration: none;
+}
+
+/* change colours to suit your needs */
+mark {
+  background-color: #ff9;
+  color: #000;
+  font-style: italic;
+  font-weight: bold;
+}
+
+del {
+  text-decoration: line-through;
+}
+
+abbr[title],
+dfn[title] {
+  border-bottom: 1px dotted;
+  cursor: help;
+}
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+/* change border colour to suit your needs */
+hr {
+  display: block;
+  height: 1px;
+  border: 0;
+  border-top: 1px solid #cccccc;
+  margin: 1em 0;
+  padding: 0;
+}
+
+input,
+select {
+  vertical-align: middle;
+}
+
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+a:hover {
+  cursor: pointer;
+}
+
+/* ここまでリセットCSS */
+
+
+
+body {
+  color: #fff;
+  background: rgb(19, 18, 18);
+  font-family: fantasy;
+  color: #BCBCBC;
+  width: 100%;
+}
+
+header {
+  width: 100%;
+  margin: 0 auto;
+  height: 100%;
+}
+/* 見出し */
+
+h2 {
+  text-align: center;
+  font-weight: bold;
+  font-size: 3em;
+  padding-top: 80px;
+  padding-bottom: 10px;
+  color: #BCBCBC;
+}
+
+/* 見出し補足 */
+h3 {
+  text-align: center;
+  padding-bottom: 50px;
+  font-size: 0.9em;
+  font-weight: 1px;
+  color: #BCBCBC;
+}
+footer {
+  text-align: center;
+  background: rgb(20, 1, 1);
+  color: #BCBCBC;
+  padding: 20px;
+}
+
+/* セクション */
+section {
+  /* text-align: center; */
+}
+/* prpfile section */
+
+.profile-section {
+  background-color: #33373A;
+  padding-bottom: 50px;
+}
+
+.profile-content {
+  display: flex;
+  justify-content: center;
+  flex-flow: row wrap;
+}
+
+.profile-content p {
+  margin: 0 auto;
+  text-align: left;
+  line-height: 1.5em;
+  padding-top: 26px;
+  width: 50%;
+}
+
+.profile-img img {
+  width: 70%;
+  border-radius: 50%;
+  padding-bottom: 10px;
+}
+
+.profile-name span {
+  font-size: small;
+}
+
+
+/* ファるおネタ */
+section {
+  text-align: center;
+}
+h4 {
+  text-align: center;
+  padding-top: 3%;
+  font-size: 1.5em;
+}
+/* ここまでファるおネタ */
+
+/* ボタン */
+.button-wrapper {
+  padding: 10px;
+  text-align: center;
+}
+
+.button {
+  height: 30px;
+  width: 300px;
+  margin:3%;
+  font-size: 12px;
+  color: #C7C8C9;
+  border-color: #6C7377;
+  background-color: #323638;
+  cursor: pointer;
+}
+
+.button a {
+  color: #C7C8C9;
+  display: block;
+  text-decoration: none;
+}
+
+/*  レスポンシブ  */
+/* 760pxを下回ると発動 */
+@media screen and (max-width: 760px) {
+  .f-logo {
+    display: none;
+  }
+  /* ここからハンバーガーメニュー */
+ /* ボタンCSS */
+.menu-btn {
+    position: fixed;
+    top: 10px;
+    right: 10px;
+    display: flex;
+    height: 60px;
+    width: 60px;
+    justify-content: center;
+    align-items: center;
+    z-index: 90;
+    background: rgb(19, 18, 18);
+
+}
+.menu-btn span,
+.menu-btn span:before,
+.menu-btn span:after {
+    content: '';
+    display: block;
+    height: 3px;
+    width: 25px;
+    border-radius: 3px;
+    background-color: #ffffff;
+    position: absolute;
+}
+.menu-btn span:before {
+    bottom: 8px;
+}
+.menu-btn span:after {
+    top: 8px;
+}
+/* バッテンになる */
+#menu-btn-check:checked ~ .menu-btn span {
+  background-color: rgba(255, 255, 255, 0);/*メニューオープン時は真ん中の線を透明にする*/
+}
+#menu-btn-check:checked ~ .menu-btn span::before {
+  bottom: 0;
+  transform: rotate(45deg);
+}
+#menu-btn-check:checked ~ .menu-btn span::after {
+  top: 0;
+  transform: rotate(-45deg);
+}
+/* チェックボックス消す */
+#menu-btn-check {
+  display: none;
+}
+/* メニューCSS */
+  .menu-content {
+    width: 100%;
+    height: 100%;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 80;
+    background: rgb(19, 18, 18);
+
+}
+.menu-content ul {
+    padding: 70px 10px 0;
+}
+.menu-content ul li {
+    border-bottom: solid 1px #ffffff;
+    list-style: none;
+}
+.menu-content ul li a {
+    display: block;
+    width: 100%;
+    font-size: 15px;
+    box-sizing: border-box;
+    color:#ffffff;
+    text-decoration: none;
+    padding: 9px 15px 10px 0;
+    position: relative;
+}
+.menu-content ul li a::before {
+    content: "";
+    width: 7px;
+    height: 7px;
+    border-top: solid 2px #ffffff;
+    border-right: solid 2px #ffffff;
+    transform: rotate(45deg);
+    position: absolute;
+    right: 11px;
+    top: 16px;
+}
+/* メニューを外に飛ばす */
+.menu-content {
+    width: 100%;
+    height: 100%;
+    position: fixed;
+    top: 0;
+    left: 100%;/*leftの値を変更してメニューを画面外へ*/
+    z-index: 80;
+    background: rgb(19, 18, 18);
+
+    transition: all 0.5s;/*アニメーション設定*/
+}
+
+/* メニューを表示 */
+#menu-btn-check:checked ~ .menu-content {
+  left: 0;/*メニューを画面内へ*/
+}
+
+ /* ここまでハンバーガーメニュー */
+
+ header {
+  width: 100%;
+}
+
+.title {
+
+  width: 100%;
+  /* background-color: burlywood;  */
+  color: #BCBCBC;
+  padding-top: 30px;
+
+  font-size: 4em;
+  text-align: center;
+  line-height: 1em;
+}
+
+.nav-menu {
+  height: 10vh;
+}
+
+.f-logo {
+  font-size: large;
+  z-index: 4;
+}
+
+.button {
+  height: 50px;
+}
+
+.profile-content p {
+  margin: 0 auto;
+  text-align: left;
+  line-height: 1.2em;
+  padding-top: 26px;
+  width: 90%;
+}
+
+}
+/* 左右のグラつきをなくす */
+.wrap_original {
+overflow: hidden;
+}
+
+/* ここからPC表示CSS */
+@media screen and (min-width: 760px) {
+  
+  /* ここからロゴ */
+.f-logo {
+  font-weight: bold;
+
+  position: fixed;
+  top: 20px;
+  left: 10px;
+  z-index: 5;
+}
+
+.f-logo a {
+  text-decoration: none;
+  color: #fff;
+  font-size: large;
+}
+/* ここまでロゴ */
+/* ボタンホバー */
+a:hover {
+  opacity: 0.8;
+}
+/* ここからハンバーガーメニュー */
+  .menu-content {
+    background: rgb(29, 1, 1);
+    /* background-color: pink; */
+    height: 7vh;
+    display: flex;
+    width: 100%;
+    position: fixed;
+    top: 0;
+    z-index: 3;
+  }
+
+  .menu-content ul {
+    /* background-color: powderblue; */
+    padding-left: 60%;
+    width: 90%;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-around;
+    list-style: none;
+  }
+.menu-content ul li {
+line-height: 7vh;
+}
+.menu-content ul li a{
+color: #fff;
+text-decoration: none;
+font-size: large;
+
+}
+
+}
+/* ここまでPC表示用CSS */

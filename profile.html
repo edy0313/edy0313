@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="ja">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>ファルオのポートフォリオサイト</title>
+  <link rel="stylesheet" href="css/profile.css">
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.1.0/css/all.css"
+    integrity="sha384-lKuwvrZot6UHsBSfcMvOkWwlCMgc0TaWr+30HWe3a4ltaBwTZhyTEggF5tJv8tbt" crossorigin="anonymous">
+</head>
+
+<body>
+  <div class="wrap_original">
+
+    <container>
+      <header>
+
+        <!-- ここからヘッダーメニュー -->
+
+        <!-- ここからロゴ -->
+        <div class="f-logo">
+          <a href="index.html">F.ISHIKAWA</a>
+        </div>
+        <!-- ここまでロゴ -->
+
+
+        <!--保管庫　ここからメニュー-->
+        <div class="hamburger-menu">
+          <input type="checkbox" id="menu-btn-check">
+          <label for="menu-btn-check" class="menu-btn"><span></span></label>
+          <!--ここからメニュー-->
+          <div class="menu-content">
+            <ul>
+              <li><a href="index.html">Home</a> </li>
+              <li><a href="works.html">Works</a> </li>
+              <li><a href="skill.html">Skill</a></li>
+              <li><a href="profile.html">Profile</a></li>
+              <li><a href="https://twitter.com/sakasapiano" target="blank">Contact</a></li>
+            </ul>
+          </div>
+          <!--ここまでメニュー-->
+        </div>
+        <!--ここまでメニュー-->
+
+        <!-- ここまでヘッダーメニュー -->
+
+        <!-- Profile -->
+        <section>
+          <div class="profile-section">
+            <h2 id="profile">Profile</h2>
+            <h3>私について</h3>
+            <div class="profile-content">
+              <div class="huwa">
+                <div class="profile-img-name">
+                  <div class="profile-img">
+                    <img src="img/show.jpg">
+                  </div>
+                  <div class="profile-name">
+                    キャプテン・ファルコン<br>
+                    <span>
+                      バウンティハンター
+                      <!-- 映像作家・動画編集 -->
+                    </span></div>
+                </div>
+              </div>
+              <div class="huwa">
+                <p>
+                  『F-ZERO』シリーズの主人公。超高速マシンレース「F-ZERO」のレーサーであり、
+                  パイロットとしての腕は超一流で、凄腕のバウンティハンター（賞金稼ぎ）としても有名とされている。
+                  かなり筋肉質の体格で、その身体に張り付いたようなアメリカン・コミックスのヒーローを思わせる
+                  デザインのボディスーツを着ている。北米版のみの設定では、フルネームが「キャプテン・ダグラス・
+                  J・ファルコン」（Captain Douglas Jay Falcon）とされている。月の石でファルおに進化する。
+
+                  <!-- 静岡県出身。動画編集のフリーランスとして活動中。
+              活動期間は１０年、納品実績は１００を超えている。
+              実績として再生数100万回の某有名YOUTUBER編集を担当、
+              登録者数30万人お有名実況者など。（実績参照）
+              得意な編集ジャンル「ゲーム実況」「歌ってみた」<br>
+              <br>
+              最も力を入れているのは”独自のカット編集技術”。
+              ”他の編集者と違う編集技術”を武器に他の追随を許さない、
+              独自性を強みとして活動している。 -->
+                </p>
+              </div>
+        
+            </div>
+          </div>
+
+          <div class="profile-content">
+            <div class="huwa">
+              <div class="profile-img-name">
+                <div class="profile-img">
+                  <img src="img/ganon.jpeg">
+                </div>
+                <div class="profile-name">
+                  ガノンドロフ<br>
+                  <span>
+                    親友・魔王
+                    <!-- 映像作家・動画編集 -->
+                  </span></div>
+              </div>
+            </div>
+            <div class="huwa">
+              <p>
+                褐色の肌と赤茶けた髪の巨躯の男。戦闘では双剣や巨剣を使った剣術などの物理攻撃を用いる他、幻術・空中浮遊・空間転移などの魔法攻撃も得意とする。『時のオカリナ』では、女ばかりの義賊の民・ゲルド族のもとに生を享け、一族に伝わる「100年に1度生まれるゲルド族の男は王となる」とのしきたりに従い王として育てられるが、一族の義賊としての姿勢に反発し、弱者からの盗みや殺人を厭わない非道な「魔盗賊」となる。その後、ハイラル王国の聖地へ侵入して「力のトライフォース」を手にし、大魔王として君臨する。
+                テレアポが得意。
+
+              </p>
+            </div>
+          </div>
+        </div>
+<div class="button-wrapper">
+          <button class="button"><a href="index.html">ここ怖い・・・HOMEに戻りたいよ</a></button></div>
+        </section>
+        </main>
+        <footer>
+          <p>©︎2021 faluo</p>
+        </footer>
+    </container>
+    <script src="https://unpkg.com/scrollreveal/dist/scrollreveal.min.js"></script>
+
+    <script>
+      //  ここからふわっと表示用JS
+      window.sr = ScrollReveal({ reset: true, mobile: true });
+      sr.reveal('.huwa', { origin: 'bottom', distance: '50px', duration: 600, scale: 1.0, delay: 400, });
+      //  ここまでふわっと表示用JS
+    </script>
+    <script src="app.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+
+
+  </div>
+</body>
+
+</html>
