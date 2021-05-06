@@ -235,7 +235,6 @@ section {
 .works-content {
   padding: 24px;
   padding-left: 30%;
-  margin: 0 auto;
 }
 
 .contents {
@@ -495,6 +494,9 @@ text-decoration: none;
 font-size: large;
 
 }
-
+.works-content {
+  padding-left: 30%;
+  margin: 0 auto;
+}
 }
 /* ここまでPC表示用CSS */
