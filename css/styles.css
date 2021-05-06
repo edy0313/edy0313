@@ -335,8 +335,9 @@ section {
 
 /* .skill */
 .skill-section {
-  background: #232628;
-  background-image: url(img/blackbox.png);
+  /* background: #232628; */
+  background-image: url(../img/hana.jpg);
+  
 }
 
 .skill-content {
